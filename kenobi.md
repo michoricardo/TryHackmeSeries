@@ -58,3 +58,9 @@ searchsploit proftpd 1.3.5
 
 ![image](https://user-images.githubusercontent.com/44788583/149191989-9182ccc3-4bed-4e9a-b274-4ec34d2487a6.png)
 
+------
+## Montar /var/tmp en nuestra máquina 
+
+- mkdir /mnt/kenobiNFS 
+- mount machine_ip:/var /mnt/kenobiNFS
+- ls -la /mnt/kenobiNFS
