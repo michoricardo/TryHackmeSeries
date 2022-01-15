@@ -27,8 +27,31 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 
 - en nuestra máquina, podemos ls para ver si está el archivo, debe descargarse en el current working directory cat log.txt para ver que trae el log file
 ![image](https://user-images.githubusercontent.com/44788583/148824837-9c9a2abc-9706-41e5-aa1f-d50df520dafb.png)
-FTP en puerto 22
+
+- Se puede ver que es un archivo de samba log y luego dice que es un archivo de configuración de pro FTPD
+![image](https://user-images.githubusercontent.com/44788583/149611227-4ce8a3fd-00d5-4b00-97b7-20f880e2f1f7.png)
 
 ----
+
+## Enumeración de RPC Bind
+
+- RPC Bind lo que hace es que convierte las remote procedure calls (RPCs) en direcciones universales
+- se enumeran con el siguiente comando de nmap: nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.187.207 (el puerto 11 lo pudimos obtener del primer escaneo de nmap)
+- vemos el mount var
+
+## Ganando acceso inicial con ProFTPD
+
+- Del escaneo inicial con nmap podemos ver que la versión que corre de ProFTPD es 1.3.5
+- Ahora correremos un escaneo de exploits para esa versión de ProFTPD
+
+![image](https://user-images.githubusercontent.com/44788583/149611745-3d8e585d-b2d3-4b25-8368-438ed04a7ce0.png)
+
+- Se encuentran 3 exploits con el modulo de copy pero si se busca el 1.3.x hay otro, entonces son 4
+
+
+
+
+----
+
 
 
