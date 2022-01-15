@@ -1,5 +1,7 @@
 https://tryhackme.com/room/kenobi
 
+TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
+
 ## Checar los puertos abiertos y checar los samba shares
 
 - nmap 10.10.56.240 -vvv   //para ver los puertos abiertos del servidor
