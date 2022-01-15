@@ -39,6 +39,9 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 - se enumeran con el siguiente comando de nmap: nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.187.207 (el puerto 11 lo pudimos obtener del primer escaneo de nmap)
 - vemos el mount var
 
+![image](https://user-images.githubusercontent.com/44788583/149612257-c9827262-a8e8-4e2e-a9a1-76e2e4243d59.png)
+
+
 ## Ganando acceso inicial con ProFTPD
 
 - Del escaneo inicial con nmap podemos ver que la versión que corre de ProFTPD es 1.3.5
