@@ -169,4 +169,12 @@ Lo que se hizo fue copiar la /bin/sh shell y
 
 We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the "curl" binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!
 
+# Tenemos shell root
+![image](https://user-images.githubusercontent.com/44788583/149636360-dac136ed-505e-4218-a442-0878bff45583.png)
+![image](https://user-images.githubusercontent.com/44788583/149636365-c3a507f2-5d85-4e63-bb88-5c5cfd4d1df9.png)
 
+- Nos piden ver el archivo root.txt que está en /root/root.txt
+- cat /root/root.txt
+![image](https://user-images.githubusercontent.com/44788583/149636385-af4cffc6-270d-4d7c-85b3-1b892238f581.png)
+
+terminamos :)
