@@ -148,4 +148,25 @@ Algo que dice el reto es que notemos que se ejecuta todo sin el path completo, e
 - Podemos checar las variables de entorno del usuario con el comando: env
 ![image](https://user-images.githubusercontent.com/44788583/149635401-2dbad6a2-9164-4985-9703-fba51bab5259.png)
 
+-----
+
+## Exportando path para poder ganar root shell con /bin/sh
+antes de esto, necesitamos saber que es una /bin/sh
+![image](https://user-images.githubusercontent.com/44788583/149635909-422c4900-cfc9-4f1b-a3d9-60a800c93c8d.png)
+Aquí se puede ver un poco de eso: 
+https://medium.com/@codingmaths/bin-bash-what-exactly-is-this-95fc8db817bf#:~:text=%2Fbin%2Fsh%20is%20an%20executable,shell%20is%20the%20system%20shell.&text=In%20last%20couple%20of%20years,but%20lighter%20and%20much%20faster.
+Prácticamente es un shell, lo que queremos hacer entonces es ejecutar una shell, lo que haremos será hacer que se mande a llamar una shell desde una de los strings que utiliza nuestro binario. En este caso, nos aprovecharemos de la instrucción curl que se encuentra dentro de nuestras strigns y que sabemos que es la que utiliza el menu en su opción 1 que es el status check
+
+Se sabe que el binario de /usr/bin/menu se ejecuta como usuario root, entonces podemos aprovechar eso
+![image](https://user-images.githubusercontent.com/44788583/149635765-2351829d-82d8-4893-b477-b7e115e775e6.png)
+
+- echo /bin/sh > curl
+- chmod 777 curl
+- export PATH=/tmp:$PATH
+
+![image](https://user-images.githubusercontent.com/44788583/149635846-8f5c43a6-9ca4-4adb-b604-72bf5ba4e860.png)
+Lo que se hizo fue copiar la /bin/sh shell y
+
+We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the "curl" binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!
+
 
