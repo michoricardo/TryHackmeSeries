@@ -1,4 +1,5 @@
 # TryHackmeSeries
-### Mi usuario en Tryhackeme: https://tryhackme.com/p/axolotlcode 
 
-El propósito de este repo es documentar los comandos y métodos que uso en tryhackme para mi o para quien les sea útil
+El propósito de este repositorio es compartir los procedimientos para hacer las máquinas que estudio en tryhackme
+
+Mi usuario en Tryhackme: https://tryhackme.com/p/axolotlcode 
