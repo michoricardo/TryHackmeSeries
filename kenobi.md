@@ -48,10 +48,16 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 
 - Se encuentran 3 exploits con el modulo de copy pero si se busca el 1.3.x hay otro, entonces son 4
 
-
-
+- En los módulos de copy se dice que se usa el SITE CPFR y SITE CPTO, entonces los podemos usar desde el exploit o de manera manual porque sabemos que este servidor es vulnerable y esos comandos se pueden ejecutar
 
 ----
+
+## Moviendo la llave privada de kenobi
+
+- SITE CPFR /home/kenobi/.ssh/id_rsa
+- 
+
+- 
 
 
 
