@@ -85,6 +85,36 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 
 ![image](https://user-images.githubusercontent.com/44788583/149634256-ce4c8a2b-10ad-4c35-920f-9fedc4ddfcbf.png)
 
+Te dejo la llave privada por si así como yo interrumpes tu jornada de trabajo pero ya encontraste la llave de kenobi y no quieres empezar de cero. Le tendrás que agregar de nuevo permisos 0400
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA4PeD0e0522UEj7xlrLmN68R6iSG3HMK/aTI812CTtzM9gnXs
+qpweZL+GJBB59bSG3RTPtirC3M9YNTDsuTvxw9Y/+NuUGJIq5laQZS5e2RaqI1nv
+U7fXEQlJrrlWfCy9VDTlgB/KRxKerqc42aU+/BrSyYqImpN6AgoNm/s/753DEPJt
+dwsr45KFJOhtaIPA4EoZAq8pKovdSFteeUHikosUQzgqvSCv1RH8ZYBTwslxSorW
+y3fXs5GwjitvRnQEVTO/GZomGV8UhjrT3TKbPhiwOy5YA484Lp3ES0uxKJEnKdSt
+otHFT4i1hXq6T0CvYoaEpL7zCq7udl7KcZ0zfwIDAQABAoIBAEDl5nc28kviVnCI
+ruQnG1P6eEb7HPIFFGbqgTa4u6RL+eCa2E1XgEUcIzxgLG6/R3CbwlgQ+entPssJ
+dCDztAkE06uc3JpCAHI2Yq1ttRr3ONm95hbGoBpgDYuEF/j2hx+1qsdNZHMgYfqM
+bxAKZaMgsdJGTqYZCUdxUv++eXFMDTTw/h2SCAuPE2Nb1f1537w/UQbB5HwZfVry
+tRHknh1hfcjh4ZD5x5Bta/THjjsZo1kb/UuX41TKDFE/6+Eq+G9AvWNC2LJ6My36
+YfeRs89A1Pc2XD08LoglPxzR7Hox36VOGD+95STWsBViMlk2lJ5IzU9XVIt3EnCl
+bUI7DNECgYEA8ZymxvRV7yvDHHLjw5Vj/puVIQnKtadmE9H9UtfGV8gI/NddE66e
+t8uIhiydcxE/u8DZd+mPt1RMU9GeUT5WxZ8MpO0UPVPIRiSBHnyu+0tolZSLqVul
+rwT/nMDCJGQNaSOb2kq+Y3DJBHhlOeTsxAi2YEwrK9hPFQ5btlQichMCgYEA7l0c
+dd1mwrjZ51lWWXvQzOH0PZH/diqXiTgwD6F1sUYPAc4qZ79blloeIhrVIj+isvtq
+mgG2GD0TWueNnddGafwIp3USIxZOcw+e5hHmxy0KHpqstbPZc99IUQ5UBQHZYCvl
+SR+ANdNuWpRTD6gWeVqNVni9wXjKhiKM17p3RmUCgYEAp6dwAvZg+wl+5irC6WCs
+dmw3WymUQ+DY8D/ybJ3Vv+vKcMhwicvNzvOo1JH433PEqd/0B0VGuIwCOtdl6DI9
+u/vVpkvsk3Gjsyh5gFI8iZuWAtWE5Av4OC5bwMXw8ZeLxr0y1JKw8ge9NSDl/Pph
+YNY61y+DdXUvywifkzFmhYkCgYB6TeZbh9XBVg3gyhMnaQNzDQFAUlhM7n/Alcb7
+TjJQWo06tOlHQIWi+Ox7PV9c6l/2DFDfYr9nYnc67pLYiWwE16AtJEHBJSHtofc7
+P7Y1PqPxnhW+SeDqtoepp3tu8kryMLO+OF6Vv73g1jhkUS/u5oqc8ukSi4MHHlU8
+H94xjQKBgExhzreYXCjK9FswXhUU9avijJkoAsSbIybRzq1YnX0gSewY/SB2xPjF
+S40wzYviRHr/h0TOOzXzX8VMAQx5XnhZ5C/WMhb0cMErK8z+jvDavEpkMUlR+dWf
+Py/CLlDCU4e+49XBAPKEmY4DuN+J2Em/tCz7dzfCNS/mpsSEn0jo
+-----END RSA PRIVATE KEY-----
+
 ----
 
 ## Ingresando como kenobi en ssh por id_rsa
@@ -106,4 +136,16 @@ tamos dentro!
 - Se nos pide que encontremos un binario fuera de lo normal, en este caso es usr/bin/menu
 - si ejecutamos con el comando: menu, obtenemos lo siguiente
 ![image](https://user-images.githubusercontent.com/44788583/149634917-6948229e-4917-4a6f-8cb3-e3818b823236.png)
+
+## Haciendo ingeniería inversa para escalar privilegios
+
+- Se buscan las strings en ese binario y se encuentran en parte las siguientes
+
+![image](https://user-images.githubusercontent.com/44788583/149635287-c31fac73-304e-491a-8909-14ca7ed44948.png)
+
+Algo que dice el reto es que notemos que se ejecuta todo sin el path completo, eso quiere decir que el path está en las variables del sistema.
+
+- Podemos checar las variables de entorno del usuario con el comando: env
+![image](https://user-images.githubusercontent.com/44788583/149635401-2dbad6a2-9164-4985-9703-fba51bab5259.png)
+
 
