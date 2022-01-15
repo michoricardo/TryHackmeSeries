@@ -175,6 +175,7 @@ We copied the /bin/sh shell, called it curl, gave it the correct permissions and
 
 - Nos piden ver el archivo root.txt que está en /root/root.txt
 - cat /root/root.txt
+
 ![image](https://user-images.githubusercontent.com/44788583/149636385-af4cffc6-270d-4d7c-85b3-1b892238f581.png)
 
 terminamos :)
