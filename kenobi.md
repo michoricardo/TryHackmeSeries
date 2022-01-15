@@ -81,6 +81,9 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 ![image](https://user-images.githubusercontent.com/44788583/149613078-708cb6a9-043f-41b5-98cf-d211d883614d.png)
 - cambiamos los permisos   para que sólo nosotros podamos modificar y no nos diga warning
 - sudo chmod 0400 id_rsa
+- Esto evitará lo siguiente: 
+
+![image](https://user-images.githubusercontent.com/44788583/149634256-ce4c8a2b-10ad-4c35-920f-9fedc4ddfcbf.png)
 
 ----
 
@@ -91,3 +94,16 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 tamos dentro!
 - Buscamos la flag que nos dicen que busquemos en la carpeta kenobi 
 ![image](https://user-images.githubusercontent.com/44788583/149613327-bcbada8f-468f-4027-94d3-5e0e185798a7.png)
+
+------
+
+## Enumerando archivos que tienen el SUID bit en ellos:
+![image](https://user-images.githubusercontent.com/44788583/149634828-0d627916-8bd3-466b-91e7-1fd78d2a1124.png)
+
+- Se ejecuta el siguiente comando: find / -perm -u=s -type f 2>/dev/null
+
+![image](https://user-images.githubusercontent.com/44788583/149634846-810c4f11-256a-44aa-988d-5185adf1b79e.png)
+- Se nos pide que encontremos un binario fuera de lo normal, en este caso es usr/bin/menu
+- si ejecutamos con el comando: menu, obtenemos lo siguiente
+![image](https://user-images.githubusercontent.com/44788583/149634917-6948229e-4917-4a6f-8cb3-e3818b823236.png)
+
