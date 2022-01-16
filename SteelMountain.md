@@ -34,4 +34,5 @@ Por el número de letras de la respuesta, podemos ver que se trata de Rejetto HT
 vamos a la página de https://www.exploit-db.com/ y buscamos CVE´s para Rejetto File Server 2.3
 ![image](https://user-images.githubusercontent.com/44788583/149642434-0f0a8527-0a46-4b69-b15f-197f60269e1d.png)
 Abrimos una de ellas para buscar el CVE
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/44788583/149642570-e3137c3f-fbe7-4c81-ba8c-abbd3483baf0.png)
+
