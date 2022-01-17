@@ -69,10 +69,11 @@ Luego en la sesión de meterpreter se utiliza el siguiente comando:
 ![image](https://user-images.githubusercontent.com/44788583/149704673-356cd1b8-cbd3-4d20-b195-ed7dae45edba.png)
 ![image](https://user-images.githubusercontent.com/44788583/149704652-4d69f6d0-d24e-40e2-a174-34b9fd154e92.png)
 y luego se ejecuta: 
+
+![image](https://user-images.githubusercontent.com/44788583/149705290-5e102ecf-090c-4d3e-922d-f7a95d4318c6.png)
 - load powershell
 - powershell_shell
 - ../PowerUp.ps1
 
-![image](https://user-images.githubusercontent.com/44788583/149705290-5e102ecf-090c-4d3e-922d-f7a95d4318c6.png)
 
-![image](https://user-images.githubusercontent.com/44788583/149704834-8cebd344-9b36-4ade-b2f8-2eede39c0708.png)
+
