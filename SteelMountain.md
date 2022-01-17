@@ -73,7 +73,10 @@ y luego se ejecuta:
 ![image](https://user-images.githubusercontent.com/44788583/149705290-5e102ecf-090c-4d3e-922d-f7a95d4318c6.png)
 - load powershell
 - powershell_shell
-- ../PowerUp.ps1
+- . .\PowerUp.ps1 (es importante el espacio entre puntos)
+- Invoke-AllChecks
+
+![image](https://user-images.githubusercontent.com/44788583/149706408-6bf048cf-6698-44b4-b0b3-13e00b22501a.png)
 
 
 
