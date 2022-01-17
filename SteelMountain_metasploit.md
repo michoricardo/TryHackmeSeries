@@ -302,6 +302,5 @@ En la nueva sesión:
 - more root.txt
  ![image](https://user-images.githubusercontent.com/44788583/149718036-ec576488-98b8-40a7-bd1c-b18e1001c791.png)
 
-
-
+### El método de no metasploit no lo realicé
 
