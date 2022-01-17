@@ -293,6 +293,7 @@ El path en el que está nuestro ejecutable vulnerable es: C:\Program Files (x86)
 Se pone como background la sesión 1
 - background
 - sessions -i 2 (para interactuar con la sesion 2)
+![image](https://user-images.githubusercontent.com/44788583/149717570-cbbe765e-649a-4061-a130-b0e9bc353ca1.png)
 En la nueva sesión: 
 - cd /        para irnos hasta el folder principal
 - cd /Users/Administrator/Desktop
@@ -302,5 +303,5 @@ En la nueva sesión:
  ![image](https://user-images.githubusercontent.com/44788583/149718036-ec576488-98b8-40a7-bd1c-b18e1001c791.png)
 
 
-![image](https://user-images.githubusercontent.com/44788583/149717570-cbbe765e-649a-4061-a130-b0e9bc353ca1.png)
+
 
