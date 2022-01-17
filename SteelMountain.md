@@ -60,5 +60,6 @@ Vemos que la flag está presente
 - cat user.txt
 ![image](https://user-images.githubusercontent.com/44788583/149699085-08ee3dac-49ea-4bec-8676-84ee16f721b5.png)
 
+### Escalando privilegios
 
-
+Se usa el powershell del recurso: https://github.com/PowerShellMafia/PowerSploit
