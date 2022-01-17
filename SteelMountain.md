@@ -237,5 +237,9 @@ CanRestart                      : False
 Name                            : LiveUpdateSvc
 Check                           : Modifiable Service Files
 
+---------
+
+Se nos dice que chequemos el servicio con CanRestart option en true, el cual es: 
+AdvancedSystemCareService9
 
 
