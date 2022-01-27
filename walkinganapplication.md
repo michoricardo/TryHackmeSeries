@@ -71,5 +71,17 @@ Vamos a la ruta sugerida por el hint, pero con el archivo tmp: https://10-10-230
 En ese archivo viene la flag
 ![image](https://user-images.githubusercontent.com/44788583/151413963-d060cd69-f1e6-4bc8-8fc4-b2fa99f577d5.png)
 
+----
+
+### Developer tools inspector
+
+Entramos a la página de los artículos y vemos que uno está bloqueado por una clase que se llama: premium-customer-blocker
+Yo estoy usando firefox, entonces si la busco, puedo cambiar sus clases facilmente, solamente inhabilitando un checkbox o su valor.
+
+![image](https://user-images.githubusercontent.com/44788583/151417085-22a63e17-cfdd-45c8-ba4b-d786aea426a7.png)
+
+![image](https://user-images.githubusercontent.com/44788583/151416460-2c425c6b-144b-48fd-8abd-4d54ac9cbfa8.png)
+
+![image](https://user-images.githubusercontent.com/44788583/151417208-c2a5a2b1-7ce9-4976-81b2-77e0562fe969.png)
 
 
