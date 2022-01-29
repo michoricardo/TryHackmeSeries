@@ -85,3 +85,11 @@ Yo estoy usando firefox, entonces si la busco, puedo cambiar sus clases facilmen
 ![image](https://user-images.githubusercontent.com/44788583/151417208-c2a5a2b1-7ce9-4976-81b2-77e0562fe969.png)
 
 
+
+![e8495e1c-6fae-44a1-9267-9c6cf29e9c01](https://user-images.githubusercontent.com/44788583/151647639-ec55895b-aabf-419f-a11f-f286d7ca76d4.jpeg)
+
+
+
+
+![image](https://user-images.githubusercontent.com/44788583/151647620-053afdee-6e2c-4468-9e61-fc1661d6dcb8.png)
+
