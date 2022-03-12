@@ -12,6 +12,7 @@ pero, si tiene un filtro, entonces nos apoyaremos del null byte o del truco de /
 <img width="659" alt="image" src="https://user-images.githubusercontent.com/44788583/158029823-e059a415-3d14-4fae-8b56-750cadf665f9.png">
 
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/44788583/158029641-e7b8f82d-7ae3-45a8-96cc-8901cbd42f02.png">
-*Give Lab #3 a try to read /etc/passwd. What is the request look like?*
+
+Give Lab #3 a try to read /etc/passwd. What is the request look like?
 
 10.10.201.20/lab3.php?file=../../../../etc/passwd%00
