@@ -32,5 +32,5 @@ usar https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-
 
 crear un archivo para poder utilizarlo (puede ser con nano)
 
-<img width="691" alt="image" src="https://user-images.githubusercontent.com/44788583/202015222-209ab6ff-6d7b-43ba-82ac-861d90464517.png">
+<img width="519" alt="image" src="https://user-images.githubusercontent.com/44788583/202015553-a623122a-afeb-4c0a-9825-d9ca52d9ece4.png">
  
