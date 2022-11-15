@@ -21,3 +21,16 @@ gobuster dir -u $IP -w /usr/share/wordlists/dirb/common.txt
 
 Un path que llama la atención es el de /panel
 
+
+accedemos a ese path por medio de $IP/panel
+
+<img width="702" alt="image" src="https://user-images.githubusercontent.com/44788583/202015350-cb0054ad-010c-4fa6-9043-3dd28d77fb21.png">
+
+
+usar https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php para tener un código de shell de reversa en php
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/44788583/202014774-992a3686-6df9-44a8-9033-abc58188e437.png">
+
+crear un archivo para poder utilizarlo (puede ser con nano)
+
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/44788583/202015222-209ab6ff-6d7b-43ba-82ac-861d90464517.png">
+ 
