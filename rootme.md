@@ -65,5 +65,11 @@ Ahora que sabemos que esta en /var/www/user.txt podemor ir a ver el contenido de
 ![image](https://user-images.githubusercontent.com/44788583/202302777-8b935d64-8ad3-4e70-9af1-4b536681825c.png)
 
 
+----
+
+Ahora buscaremos archivos con permiso SUID
+
+con el siguiente comando, vemos eso: find / -user root -perm /4000
+
 
 
