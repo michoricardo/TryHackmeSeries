@@ -36,6 +36,7 @@ crear un archivo para poder utilizarlo (puede ser con nano) y se sube a la pági
 <img width="519" alt="image" src="https://user-images.githubusercontent.com/44788583/202015553-a623122a-afeb-4c0a-9825-d9ca52d9ece4.png">
  
 para verificar que se subió, ir a: $IP/uploads
+
 <img width="524" alt="image" src="https://user-images.githubusercontent.com/44788583/202016289-0aeebbf6-f2f4-4e85-937e-d0f609f72a9f.png">
 
 Ahora para comunicarse, debemos poner a la escucha un puerto por medio de netcat y a su vez hacer una llamada al archivo recién subido, cada uno en una terminal diferente: 
