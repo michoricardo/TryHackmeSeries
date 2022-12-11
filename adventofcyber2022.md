@@ -11,3 +11,8 @@ para hacer una búsqueda recursiva buscando el "THM" , podemos hacer grep igual
 grep "THM" -r 
 <img width="1171" alt="image" src="https://user-images.githubusercontent.com/44788583/206889660-82d29bd4-99c7-4d5c-87f0-f87f95ffcb73.png">
 
+-----
+
+Task 8 day 3: 
+<img width="858" alt="image" src="https://user-images.githubusercontent.com/44788583/206891284-7bfbdfa3-4e19-483b-bdd6-53cd88851134.png">
+ 
