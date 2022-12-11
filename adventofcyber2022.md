@@ -16,3 +16,11 @@ grep "THM" -r
 Task 8 day 3: 
 <img width="858" alt="image" src="https://user-images.githubusercontent.com/44788583/206891284-7bfbdfa3-4e19-483b-bdd6-53cd88851134.png">
  
+-----
+
+Task 11 day 6: 
+
+<img width="652" alt="image" src="https://user-images.githubusercontent.com/44788583/206926239-a865c995-0e23-46fe-8ddf-e4c1ce0681ff.png">
+
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/44788583/206926254-a877d86d-14c8-43d3-a00b-137b085f34d8.png">
+
