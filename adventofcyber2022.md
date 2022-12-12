@@ -24,3 +24,9 @@ Task 11 day 6:
 
 <img width="658" alt="image" src="https://user-images.githubusercontent.com/44788583/206926254-a877d86d-14c8-43d3-a00b-137b085f34d8.png">
 
+<img width="1198" alt="image" src="https://user-images.githubusercontent.com/44788583/206953661-9cd2177c-b87b-4d02-b0d6-41553a8515be.png">
+ 
+ <img width="1252" alt="image" src="https://user-images.githubusercontent.com/44788583/206953821-fcbec3ac-6d11-4233-bc7b-bcf8abf56a15.png">
+
+------
+
