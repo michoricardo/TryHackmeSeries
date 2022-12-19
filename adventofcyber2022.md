@@ -65,6 +65,11 @@ RegCloseKey
 Nos enfocaremos en RegCreateKey y RegSetValue
 
 ![image](https://user-images.githubusercontent.com/44788583/208501178-23dd5720-3b7a-4c3e-81ae-762d4459a39d.png)
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/44788583/208507289-a65b8f66-1cf3-4969-9b5d-c87ef9178677.png">
+
+<img width="706" alt="image" src="https://user-images.githubusercontent.com/44788583/208508665-47b673e1-bae1-4bd7-a9f8-e7b64b9b4f9e.png">
+
+<img width="668" alt="image" src="https://user-images.githubusercontent.com/44788583/208510347-1f52292b-6863-4e31-aa8b-308cca2a2117.png">
 
 
 
