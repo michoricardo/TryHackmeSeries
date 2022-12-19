@@ -33,10 +33,35 @@ Task 11 day 6:
 Task 15 day 10:
 ![image](https://user-images.githubusercontent.com/44788583/208166351-7d93e47a-9d26-4a58-9e69-df9856e58142.png)
 
+
+----
+
+Task 16 day 11: 
+![image](https://user-images.githubusercontent.com/44788583/208493289-693b8552-690e-4d72-8832-963904dc9361.png)
+
+
+
+
+
 ------
 
 Task 16 day 11: 
 
 <img width="1251" alt="Captura de Pantalla 2022-12-18 a la(s) 17 38 43" src="https://user-images.githubusercontent.com/44788583/208325589-503d184c-c526-4fdf-9d8b-d729165ff2e5.png">
+![image](https://user-images.githubusercontent.com/44788583/208496208-49ee9057-4ad6-449b-a635-4e23a19bf9fb.png)
+![image](https://user-images.githubusercontent.com/44788583/208498687-2e682b5e-d54f-480b-87fb-aace8ea2bbc2.png)
+![image](https://user-images.githubusercontent.com/44788583/208498790-38848726-c6c1-45ad-96b3-5e5813d9e504.png)
+![image](https://user-images.githubusercontent.com/44788583/208499588-6e7b7402-8ffb-467d-8064-c7e67863a0e5.png)
+
+Del procmon, eliminamos: 
+RegOpenKey
+RegQueryValue
+RegQueryKey
+RegCloseKey
+
+Nos enfocaremos en RegCreateKey y RegSetValue
+
+![image](https://user-images.githubusercontent.com/44788583/208501178-23dd5720-3b7a-4c3e-81ae-762d4459a39d.png)
+
 
 
