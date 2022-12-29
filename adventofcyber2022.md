@@ -71,5 +71,11 @@ Nos enfocaremos en RegCreateKey y RegSetValue
 
 <img width="668" alt="image" src="https://user-images.githubusercontent.com/44788583/208510347-1f52292b-6863-4e31-aa8b-308cca2a2117.png">
 
+-----
+
+Task 26 day 21:
+![image](https://user-images.githubusercontent.com/44788583/210018211-1bb7527d-7207-4968-adcc-f128eb4f3a1a.png)
+![image](https://user-images.githubusercontent.com/44788583/210018314-6dd7ee86-aaae-45c1-8fc4-cd13d3b31db2.png)
+
 
 
